@@ -1,1 +1,0 @@
-# Scoutmodelmp.github.io
