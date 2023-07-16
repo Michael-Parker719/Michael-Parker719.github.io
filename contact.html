@@ -27,41 +27,48 @@
   <body>
     <div id="header"></div>
 
-    <div class="row">
-      <div class="mx-auto col-10 col-md-8 col-lg-6">
-        <h1 class="subheader">Contact Me</h1>
-        <form action=”https://getform.io/f/f1d642c2-7c83-40af-9189-23b6eeac2274” method="POST">
-          <div class="form-group text-white">
-            <label>Name</label>
-            <input
-              type="text"
-              name="name"
-              class="form-control"
-              placeholder="Name Here"
-            />
-          </div>
-          <div class="form-group text-white">
-            <label>Email address</label>
-            <input
-              type="text"
-              name="email"
-              class="form-control"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="form-group text-white">
-            <label>Your Message</label>
-            <textarea
-              name="message"
-              class="form-control"
-              rows="3"
-              placeholder="Write your message here"
-            ></textarea>
-          </div>
-          <button type="submit">Send</button>
-        </form>
+  <h1 class="subheader">Contact Me</h1>
+  <!-- <form action=”https://getform.io/f/f1d642c2-7c83-40af-9189-23b6eeac2274” method="POST">
+      <label>Name</label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Name Here"
+      />
+      <label>Email address</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="name@example.com"
+      />
+    <input type="hidden" name="_gotcha" style="display:none !important">
+      <label>Your Message</label>
+      <input type="text" name="message">
+    <button type="submit">Send</button>
+  </form> -->
+
+  <div class="row pt-5">
+  <div class="mx-auto col-10 col-md-8 col-lg-2">
+    <form action="https://getform.io/f/f1d642c2-7c83-40af-9189-23b6eeac2274" method="POST">
+      <div class="form-group pb-2">
+      <label class="text-white">Name</label>
+      <input type="text" name="name" placeholder="Your name here">
       </div>
-    </div>
+      <div class="form-group pb-2">
+      <label class="text-white">Email</label>
+      <input type="email" name="email" placeholder="name@example.com">
+      </div>
+      <div class="form-group pb-2">
+      <label class="text-white">Message</label>
+      <input type="text" name="message"  style="height:200px; width:400px" placeholder="Your message here">
+      </div>
+      <!-- add hidden Honeypot input to prevent spams -->
+      <input type="hidden" name="_gotcha" style="display:none !important">
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  </div>
+
 
     <div id="footer"></div>
 
